@@ -1,11 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>Hello</h1>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Home</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <button class="btn btn-xs btn-outline-success mx-3 my-1 rounded-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <i class="fa-solid fa-b fw-bold"></i>
+          </button>
+          <a class="navbar-brand disabled fw-bold" href="#">Benchmark </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-flex flex-row-reverse" id="navbarTogglerDemo02">
+            <form class="d-flex" role="search">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Finanzas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Acturia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Riesgos</a>
+                </li>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Sidebar -->
+    
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title fw-bold" id="offcanvasExampleLabel"><span class="fw-bold"> Bienvenido</span></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="">
+          <p class="text-center"> {{ username }}</p>
+          Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+        </div>
+        <div class="dropdown mt-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Sidebar -->
+
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading mt-5 fw-bold">Benchmark Home</h1>
+        <p class="lead text-muted mb-4">
+            Obtén información valiosa sobre el análisis de datos financieros, predicción de tendencias, gestión de riesgos y mucho más. Descubre cómo puedes tomar decisiones más informadas y estratégicas para maximizar tus inversiones y mejorar tu rendimiento financiero.
+        </p>
+      </div>
+    </section>
+
+    <hr class="my-3">
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="https://www.itprotoday.com/sites/itprotoday.com/files/styles/article_featured_retina/public/GettyImages-1343006928-1401x788-49696df.jpeg?itok=5BgyVhCG" alt="Placeholder" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text">
+                  Desata el potencial de las finanzas cuantitativas y toma decisiones financieras más inteligentes y rentables.
+                </p>
+                <button class="btn btn-outline-success form-control" type="button">Ver Finanzas</button>
+
+              </div>
+            </div>
+          </div>
+          <!-- Repeat this card block for additional cards -->
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="https://www.itprotoday.com/sites/itprotoday.com/files/styles/article_featured_retina/public/GettyImages-1343006928-1401x788-49696df.jpeg?itok=5BgyVhCG" alt="Placeholder" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text">Descubre el mundo apasionante y no muy conocido de la actuaria y su impacto en la gestión de riesgos financieros.<br></p>
+                <button class="btn btn-outline-success form-control" type="button">Ver Actuaria</button>
+              </div>
+            </div>
+          </div>
+          <!-- Repeat this card block for additional cards -->
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="https://www.itprotoday.com/sites/itprotoday.com/files/styles/article_featured_retina/public/GettyImages-1343006928-1401x788-49696df.jpeg?itok=5BgyVhCG" alt="Placeholder" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text">Adéntrate en el apasionante mundo de la gestión de riesgos y descubre estrategias sólidas para protegerte y enfrentar los desafíos financieros</p>
+                <button class="btn btn-outline-success form-control" type="button">Ver Riesgos</button>
+              </div>
+            </div>
+          </div>
+          <!-- Repeat this card block for additional cards -->
+
+          <footer class="text-muted text-center py-4">
+            <p>&copy; 2023 Created by Benchmark</p>
+          </footer>
+
+        </div>
+      </div>
+    </div>
+
+  </body>
 </html>
